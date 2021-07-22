@@ -1,0 +1,153 @@
+/* body{
+  background-color: #ebdc87;
+} */
+
+h1{
+  font-family: "Montserrat-Black";
+  line-height: 1.5;
+  font-size: 3.5rem;
+}
+
+.container-fluid{
+  padding: 0% 10%;
+}
+
+#title{
+  background-color: #008080;
+  color: #fff;
+}
+
+body{
+  font-family: "Montserrat";
+}
+
+hr{
+  margin: 0;
+  padding: 0;
+  background-color: #888888;
+}
+
+.navbar{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.navbar-brand{
+  font-size: 2.5rem;
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.title-heading{
+  margin-right: 40px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.title-image{
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}
+.img-logo{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 10%;
+  height: auto;
+}
+
+.dropdown-pad{
+  padding: 0px;
+}
+.Product-menu{
+  text-align: right;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.product-list{
+  font-size: 1rem;
+}
+
+.list{
+  font-size: 0.5rem;
+  list-style-type: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.ul-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 4px;
+  overflow: hidden;
+  background-color: #888888;
+}
+
+.li-list {
+  float: left;
+}
+
+.li-list a {
+  display: list-item;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+.li-list a:hover {
+  background-color: #888888;
+}
+
+#features{
+
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+#cta{
+  font-family: "Montserrat-Black";
+  padding-top:  50px;
+  padding-bottom: 50px;
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+.cta-text{
+  padding-bottom: 20px;
+}
+
+#footer{
+  text-align: center;
+  background-color: #fff;
+  margin: 100px auto 0;
+  /* color: */
+}
