@@ -65,6 +65,11 @@ hr{
   height: auto;
 }
 
+.about_us{
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+}
+
 .dropdown-pad{
   padding: 0px;
 }
@@ -199,4 +204,17 @@ hr{
 
 .hide{
   display: none;
+}
+
+.Product_Details{
+  padding-top: 10px;
+
+}
+
+.Product_Name{
+  text-align: left;
+}
+
+.contact-us{
+  padding: 20px 50px;
 }

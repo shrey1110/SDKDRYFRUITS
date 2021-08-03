@@ -29,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">About</a>
+              <a class="nav-link" href="#about-us">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Products</a>
+              <a class="nav-link" href="#features">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="D:\Website\PTC\contact.html">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@
 
                 <div class="dropdown">
 
-                  <a href="#features" class="Product-menu">Dry Fruits</a>
+                  <a href="#features" class="Product-menu"  onclick="titleProduct('Product_DryFruits')" >Dry Fruits</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
@@ -93,7 +93,7 @@
               <div class="itme2 Product-menu">
                 <div class="dropdown">
 
-                  <a href="" class="Product-menu">Spices</a>
+                  <a href="#features" class="Product-menu" onclick="titleProduct('Product_Spices')">Spices</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
@@ -125,7 +125,7 @@
 
                 <div class="dropdown">
 
-                  <a href="" class="Product-menu">Grocery</a>
+                  <a href="#features" class="Product-menu" onclick="titleProduct('Product_Grocery')">Grocery</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
@@ -154,7 +154,7 @@
               <div class="itme2 Product-menu">
                 <div class="dropdown">
 
-                  <a href="" class="Product-menu">Seeds</a>
+                  <a href="#features" class="Product-menu" onclick="titleProduct('Product_Seeds')">Seeds</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
@@ -188,6 +188,23 @@
     </div>
   </section>
 
+  <section id="about-us">
+    <div class="container-fluid ">
+      <div class="about_us">
+        <div class="row">
+          <h3>Who Are We!</h3>
+        </div>
+        <div class="row">
+          <span>Surana Dryfruits and Kirana is a wholesale and retail shop of premiun quality dryfruits.</span>
+          <span>With an experience of 30 years in dryfruits, starting this new venture and bringing premiun quality dryfruits at wholesale price near your home.</span>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
 
   <!-- Features -->
 
@@ -207,33 +224,96 @@
             <p>Almonds</p>
             <p>Cashew</p>
           </div>
-          <button type="button" class="collapsible" onclick="myFunction('Product_Grocery')">Grocery</button>
+          <button type="button" id="Menu_Grocery" class="collapsible" onclick="myFunction('Product_Grocery')">Grocery</button>
           <div class="content">
             <p>Almonds</p>
             <p>Cashew</p>
           </div>
-          <button type="button" class="collapsible" onclick="myFunction('Product_Seeds')">Seeds</button>
+          <button type="button" id="Menu_Seeds" class="collapsible" onclick="myFunction('Product_Seeds')">Seeds</button>
           <div class="content">
             <p>Almonds</p>
             <p>Cashew</p>
           </div>
-          <script src="myScript.js"></script>
         </div>
         <div id="Product_DryFruits"  class="col-lg-9 hide">
-          <img src="dryfruits.jpg" alt="" width=33% />
-          <img src="dryfruits.jpg" alt="" width=33% />
-          <img src="dryfruits.jpg" alt="" width=33% />
-          <img src="dryfruits.jpg" alt="" width=33% />
-          <img src="dryfruits.jpg" alt="" width=33% />
-          <img src="dryfruits.jpg" alt="" width=33% />
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <div class="">
+                Almonds
+              </div>
+              <div class="">
+                Price: 600-4000/kg
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <div class="">
+                Almonds
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <div class="">
+                Almonds
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <div class="">
+                Almonds
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <div class="">
+                Almonds
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <div class="">
+                Almonds
+              </div>
+            </div>
+          </div>
+
         </div>
         <div id="Product_Spices"  class="col-lg-9 hide">
-          <img src="spices.jpeg" alt="" width=33% />
-          <img src="spices.jpeg" alt="" width=33% />
-          <img src="spices.jpeg" alt="" width=33% />
-          <img src="spices.jpeg" alt="" width=33% />
-          <img src="spices.jpeg" alt="" width=33% />
-          <img src="spices.jpeg" alt="" width=33% />
+          <div class="col-lg-4">
+            <div class="">
+              <ul>
+                <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+                <div class="">
+                  Red Chili
+                </div>
+              </ul>
+              <ul>
+                <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+              </ul>
+              <ul>
+                <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <ul>
+              <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+              <div class="">
+                Red Chili
+              </div>
+            </ul>
+            <ul>
+              <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+            </ul>
+            <ul>
+              <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+            </ul>
+          </div>
+
+
         </div>
         <div id="Product_Grocery"  class="col-lg-9 hide">
           <img src="grocery.jpg" alt="" width=33%  />
@@ -253,8 +333,30 @@
         </div>
       </div>
     </div>
+
   </section>
 
+  <section id="contact">
+    <address class="contact-us">
+      <h3>Contact Us</h3>
+      Address: M.S. Plaza, Opp. Danwantari Hospital, Pal Road, Jodhpur, Rajasthan, 342008<br>
+      <a href="https://goo.gl/maps/tZSY5T8U3ZH4WM968">Click here for directions</a><br>
+      <a href="tel:9784412637">Call Us At 978-441-2637</a><br>
+      <a href="mailto:sdkdryfruits@gmail.com">Mail Us At sdkdryfruits@gmail.com</a>
+      <form class="" action="index.html" method="post">
+        <label>Your Name</label>
+        <input type="text" name="" value=""><br>
+        <label>Mobile no.</label>
+        <input type="number" name="" value=""><br>
+        <label>Message</label>
+        <input type="text" name="" value=""><br>
+        <input type="submit" name="">
+      </form>
+    </address>
+
+
+
+  </section>
 
   <!-- Footer -->
 
@@ -281,7 +383,7 @@
         <td><img src="https://cdn.shopify.com/s/files/1/0062/4214/0227/products/DF_01-02_2048x.jpg?v=1540659049">Almonds</td>
       </tr>
     </table> -->
-
+  <script src="myScript.js"></script>
 </body>
 
 </html>
