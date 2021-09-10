@@ -64,15 +64,15 @@
 
                 <div class="dropdown">
 
-                  <a href="#features" class="Product-menu"  onclick="titleProduct('Product_DryFruits')" >Dry Fruits</a>
+                  <a href="" class="Product-menu"    >Dry Fruits</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
                       <li class="li-list">
-                        <a href="">Almonds</a>
+                        <a href="#features" onclick="getDryFruits('Almonds')">Almonds</a>
                       </li>
                       <li class="li-list">
-                        <a href="">Cashew</a>
+                        <a href="#features" onclick="getDryFruits('Cashew')" >Cashew</a>
                       </li>
                       <li class="li-list">
                         <a href="">Pistachio</a>
@@ -93,12 +93,12 @@
               <div class="itme2 Product-menu">
                 <div class="dropdown">
 
-                  <a href="#features" class="Product-menu" onclick="titleProduct('Product_Spices')">Spices</a>
+                  <a href="" class="Product-menu">Spices</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
                       <li class="li-list">
-                        <a href="">Almonds</a>
+                        <a href="#features" onclick="getDryFruits('Black-Pepper')">Black Pepper</a>
                       </li>
                       <li class="li-list">
                         <a href="">Cashew</a>
@@ -125,7 +125,7 @@
 
                 <div class="dropdown">
 
-                  <a href="#features" class="Product-menu" onclick="titleProduct('Product_Grocery')">Grocery</a>
+                  <a href="" class="Product-menu">Grocery</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
@@ -154,7 +154,7 @@
               <div class="itme2 Product-menu">
                 <div class="dropdown">
 
-                  <a href="#features" class="Product-menu" onclick="titleProduct('Product_Seeds')">Seeds</a>
+                  <a href="" class="Product-menu">Seeds</a>
 
                   <div class="dropdown-content">
                     <ul class="ul-list">
@@ -214,114 +214,152 @@
       <div class="row">
         <div class="col-lg-3">
           <p>Products</p>
-          <button type="button" id="Menu_DryFruits" class="collapsible" onclick="myFunction('Product_DryFruits')" >Dryfruits</button>
+          <button type="button" id="Menu_DryFruits" class="collapsible">Dryfruits</button>
             <div class="content">
-              <p>Almonds</p>
-              <p>Cashew</p>
+              <ul class="ul-list">
+                <li class=""><button type="button" class="button" id="Almond_DryFruits" onclick="getDryFruits('Almonds')" >Almonds</button></li>
+                <li class=""><button type="button" class="button" id="Cashew_DryFruits" onclick="getDryFruits('Cashew')" >Cashew Nuts</button></li>
+              </ul>
+
+
             </div>
-          <button type="button" id="Menu_Spices" class="collapsible" onclick="myFunction('Product_Spices')">Spices</button>
-          <div class="content">
+          <button type="button" id="Menu_Spices" class="collapsible">Spices</button>
+            <div class="content">
+              <ul class="ul-list">
+                <li class=""><button type="button" class="button" id="Almond_DryFruits" onclick="getDryFruits('Black-Pepper')" >Black Pepper</button></li>
+                <li class=""><button type="button" class="button" id="Cashew_DryFruits" onclick="getDryFruits('Cashew')" >Cashew Nuts</button></li>
+              </ul>
+          </div>
+          <button type="button" id="Menu_Grocery" class="collapsible">Grocery</button>
+            <div class="content">
             <p>Almonds</p>
             <p>Cashew</p>
           </div>
-          <button type="button" id="Menu_Grocery" class="collapsible" onclick="myFunction('Product_Grocery')">Grocery</button>
-          <div class="content">
-            <p>Almonds</p>
-            <p>Cashew</p>
-          </div>
-          <button type="button" id="Menu_Seeds" class="collapsible" onclick="myFunction('Product_Seeds')">Seeds</button>
-          <div class="content">
+          <button type="button" id="Menu_Seeds" class="collapsible">Seeds</button>
+            <div class="content">
             <p>Almonds</p>
             <p>Cashew</p>
           </div>
         </div>
         <div id="Product_DryFruits"  class="col-lg-9 hide">
-          <div class="row">
+          <div class="row ">
+            <div class="col-lg-4 ">
+              <button type="button" class="button" name="button" onclick="getDryFruits('Almonds')">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Almonds<br/>
+                  Price: 600-4000/kg
+                </div>
+              </button>
+            </div>
             <div class="col-lg-4">
-              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
               <div class="">
-                Almonds
-              </div>
-              <div class="">
-                Price: 600-4000/kg
+                Cashew Nuts<br />
+                Price: 400-1500/kg
               </div>
             </div>
             <div class="col-lg-4">
-              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
-              <div class="">
-                Almonds
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
-              <div class="">
-                Almonds
+              <img src="pistachio.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+              <<div class="">
+                Pistachio<br/>
+                Price: 800-1400/kg
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4">
-              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <img src="Anjir.jpg" class="Product_Details" alt="" width="80%" height="60%" />
               <div class="">
-                Almonds
+                Anjir<br />
+                Price: 1000-1600/kg
               </div>
             </div>
             <div class="col-lg-4">
-              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
+              <img src="walnut.jpg" class="Product_Details" alt="" width="80%" height="60%" />
               <div class="">
-                Almonds
+                Walnuts<br />
+                Price: 600-1500/kg
               </div>
             </div>
             <div class="col-lg-4">
-              <img src="dryfruits.jpg" class="Product_Details" alt="" width="100%" />
-              <div class="">
-                Almonds
-              </div>
+              <a href="#">
+                <img src="Green-Raisin.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Raisins<br />
+                  Price:300-1000/kg
+                </div>
+              </a>
+
             </div>
           </div>
 
         </div>
         <div id="Product_Spices"  class="col-lg-9 hide">
-          <div class="col-lg-4">
-            <div class="">
-              <ul>
-                <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+          <div class="row ">
+            <div class="col-lg-4 ">
+              <button type="button" class="button" name="button" onclick="getDryFruits('Black-Pepper')">
+                <img src="black-pepper.jpg" class="Product_Details" alt="" width="80%" height="60%" />
                 <div class="">
-                  Red Chili
+                  Almonds<br/>
+                  Price: 600-4000/kg
                 </div>
-              </ul>
-              <ul>
-                <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
-              </ul>
-              <ul>
-                <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
-              </ul>
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+              <div class="">
+                Cashew Nuts<br />
+                Price: 400-1500/kg
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="pistachio.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+              <<div class="">
+                Pistachio<br/>
+                Price: 800-1400/kg
+              </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <ul>
-              <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="Anjir.jpg" class="Product_Details" alt="" width="80%" height="60%" />
               <div class="">
-                Red Chili
+                Anjir<br />
+                Price: 1000-1600/kg
               </div>
-            </ul>
-            <ul>
-              <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
-            </ul>
-            <ul>
-              <img src="spices.jpeg" class="Product_Details" alt="" width=100% />
-            </ul>
+            </div>
+            <div class="col-lg-4">
+              <img src="walnut.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+              <div class="">
+                Walnuts<br />
+                Price: 600-1500/kg
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <a href="#">
+                <img src="Green-Raisin.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Raisins<br />
+                  Price:300-1000/kg
+                </div>
+              </a>
+
+            </div>
           </div>
 
 
         </div>
         <div id="Product_Grocery"  class="col-lg-9 hide">
-          <img src="grocery.jpg" alt="" width=33%  />
-          <img src="grocery.jpg" alt="" width=33%  />
-          <img src="grocery.jpg" alt="" width=33%  />
-          <img src="grocery.jpg" alt="" width=33%  />
-          <img src="grocery.jpg" alt="" width=33%  />
-          <img src="grocery.jpg" alt="" width=33%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
+          <img src="grocery.jpg" class="Product_Details" alt="" width=40%  />
         </div>
         <div id="Product_Seeds"  class="col-lg-9 hide">
           <img src="seeds.jpg" alt="" width=33% />
@@ -331,38 +369,180 @@
           <img src="seeds.jpg" alt="" width=33% />
           <img src="seeds.jpg" alt="" width=33% />
         </div>
+        <div id="blank" class="col-lg-9 hide">
+          <p>Please Select Product From Menu</p>
+        </div>
+        <div id="Almonds"  class="product-details col-lg-9 hide">
+            <div class="row ">
+              <div class="col-lg-4 ">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Amrican Almonds<br/>
+                  Price: 600/kg
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  American Big<br />
+                  Price: 800/kg
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <<div class="">
+                  Salohra<br/>
+                  Price: 1000/kg
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Mamra Tanch<br />
+                  Price: 1500/kg
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Mamra<br />
+                  Price: 2000/kg
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <img src="Almonds.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                <div class="">
+                  Jumbo Mamra<br />
+                  Price:2500/kg
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+        <div id="Cashew"  class="product-details col-lg-9 hide">
+              <div class="row ">
+                <div class="col-lg-4 ">
+                  <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                  <div class="">
+                    Amrican Almonds<br/>
+                    Price: 600/kg
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                  <div class="">
+                    American Big<br />
+                    Price: 800/kg
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                  <<div class="">
+                    Salohra<br/>
+                    Price: 1000/kg
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                  <div class="">
+                    Mamra Tanch<br />
+                    Price: 1500/kg
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                  <div class="">
+                    Mamra<br />
+                    Price: 2000/kg
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                  <div class="">
+                    Jumbo Mamra<br />
+                    Price:2500/kg
+                  </div>
+
+                </div>
+              </div>
+
+        </div>
+        <div id="Black-Pepper"  class="product-details col-lg-9 hide">
+                  <div class="row ">
+                    <div class="col-lg-4 ">
+                      <img src="black-pepper.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                      <div class="">
+                        Amrican Almonds<br/>
+                        Price: 600/kg
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                      <div class="">
+                        American Big<br />
+                        Price: 800/kg
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                      <<div class="">
+                        Salohra<br/>
+                        Price: 1000/kg
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                      <div class="">
+                        Mamra Tanch<br />
+                        Price: 1500/kg
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                      <div class="">
+                        Mamra<br />
+                        Price: 2000/kg
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="cashews.jpg" class="Product_Details" alt="" width="80%" height="60%" />
+                      <div class="">
+                        Jumbo Mamra<br />
+                        Price:2500/kg
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+
       </div>
     </div>
 
   </section>
 
-  <section id="contact">
-    <address class="contact-us">
-      <h3>Contact Us</h3>
-      Address: M.S. Plaza, Opp. Danwantari Hospital, Pal Road, Jodhpur, Rajasthan, 342008<br>
-      <a href="https://goo.gl/maps/tZSY5T8U3ZH4WM968">Click here for directions</a><br>
-      <a href="tel:9784412637">Call Us At 978-441-2637</a><br>
-      <a href="mailto:sdkdryfruits@gmail.com">Mail Us At sdkdryfruits@gmail.com</a>
-      <form class="" action="index.html" method="post">
-        <label>Your Name</label>
-        <input type="text" name="" value=""><br>
-        <label>Mobile no.</label>
-        <input type="number" name="" value=""><br>
-        <label>Message</label>
-        <input type="text" name="" value=""><br>
-        <input type="submit" name="">
-      </form>
-    </address>
-
-
-
-  </section>
 
   <!-- Footer -->
 
   <footer id="footer">
-    <a class="fab fa-facebook nav-link" href="https://www.facebook.com/pages/category/Grocery-Store/Surana-dryfruits-and-kirana-103050901587321/"></a>
-    <a class="fab fa-instagram nav-link" href="https://www.instagram.com/surana_dryfruits/"></a>
+    <address class="contact-us">
+      <h3>Contact Us</h3>
+      Address: M.S. Plaza, Opp. Danwantari Hospital, Pal Road, Jodhpur, Rajasthan, 342008<br>
+      <a class="footer-a" href="https://goo.gl/maps/tZSY5T8U3ZH4WM968">Click here for directions</a><br>
+      <a class="footer-a" href="tel:9784412637">Call Us At 978-441-2637</a><br>
+      <a class="footer-a" href="mailto:sdkdryfruits@gmail.com">Mail Us At sdkdryfruits@gmail.com</a>
+    </address>
+    <a class="footer-a fab fa-facebook nav-link" href="https://www.facebook.com/pages/category/Grocery-Store/Surana-dryfruits-and-kirana-103050901587321/"></a>
+    <a class="footer-a fab fa-instagram nav-link" href="https://www.instagram.com/surana_dryfruits/"></a>
     <p>© Copyright 2020 Surana Dryfruits and Kirana</p>
 
   </footer>

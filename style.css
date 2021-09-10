@@ -114,7 +114,7 @@ hr{
   margin: 0;
   padding: 4px;
   overflow: hidden;
-  background-color: #888888;
+  background-color: #f1f1f1;
 }
 
 .li-list {
@@ -124,7 +124,7 @@ hr{
 .li-list a {
   display: list-item;
   font-size: 1rem;
-  color: white;
+  color: Black;
   text-align: center;
   padding: 8px 8px;
   text-decoration: none;
@@ -153,9 +153,10 @@ hr{
 }
 
 #footer{
+  color: #fff;
   text-align: center;
-  background-color: #fff;
-  margin: 100px auto 0;
+  background-color: #008080;
+  margin: 0px auto 0;
   /* color: */
 }
 
@@ -179,6 +180,11 @@ hr{
   grid-row: 1 / span 2;
 }
 
+.button{
+  border: none;
+  background-color: inherit;
+}
+
 .collapsible {
   background-color: #777;
   color: white;
@@ -195,6 +201,14 @@ hr{
   background-color: #555;
 }
 
+  .rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 150px;
+  height: 250px;
+}
+
 .content {
   padding: 0 18px;
   display: none;
@@ -207,7 +221,9 @@ hr{
 }
 
 .Product_Details{
-  padding-top: 10px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 
@@ -216,5 +232,10 @@ hr{
 }
 
 .contact-us{
-  padding: 20px 50px;
+  color: #fff;
+  padding: 0px 50px;
+}
+
+a.footer-a:link{
+  color: #fff;
 }
